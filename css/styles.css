@@ -14,7 +14,7 @@ img {
 .header {
     border-bottom: 1px solid #e7e9fc
 }
-.header-container{
+.container{
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
@@ -88,7 +88,7 @@ nav {
     background-color: #2e2f42;
     padding: 188px 0;
 }
-.conteiner{
+.container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;    
@@ -317,5 +317,5 @@ nav {
     letter-spacing: 0.02em;
     font-size: 14px;
     margin-top: 10px;
-    max-width: 264px;
+    max-width: 264px
 }
