@@ -7,7 +7,25 @@ body {
 ul,ol {
     list-style-type: none;
 }
+img {
+    display: block;
+}
 /* Header section */
+.header {
+    border-bottom: 1px solid #e7e9fc
+}
+.header-container{
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+} 
+nav {
+    display: flex;
+    align-items: center;
+    
+}
 .logo-class {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -16,12 +34,17 @@ ul,ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-span-studio {
     color: #2e2f42;
 }
-
+.header-menu-container{
+    display: flex;
+    gap: 40px;
+    margin-right: 0;
+}
 .nav-link-class {
     font-weight: 500;
     font-size: 16px;
@@ -29,6 +52,8 @@ ul,ol {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;    
 }
 
 .nav-link-class:hover,
@@ -36,6 +61,10 @@ ul,ol {
     color: #404bbf;
 }
 
+.header-address-container{
+    display: flex;
+    gap: 40px;  
+}
 .contact-info {
     font-style: normal;
     color: #434455;
@@ -57,6 +86,12 @@ ul,ol {
 /* Main section */
 .section-class {
     background-color: #2e2f42;
+    padding: 188px 0;
+}
+.conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;    
 }
 
 .section-heading {
@@ -65,9 +100,14 @@ ul,ol {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
+    max-width: 496px;
+    margin: 0 auto 20px;
 }
 
 .button-class {
+    display: block;
+    min-width: 169px;
+    height: 56px;
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -77,22 +117,60 @@ ul,ol {
     color: #ffffff;
     cursor: pointer;
     border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
 }
 
 .button-class:hover,
 .button-class:focus {
     background-color: #404BBF;
+
 }
 
-/* Second section */
+/* Features section */
+.section-features {
+   padding: 120px 0;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.features-list {
+    display: flex;
+    gap: 24px;
+    /* Відступ між елементами списку */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.feature-item {
+    width: calc((100% - 72px) / 4);
+    /* Ширина пункту списку */
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    /* Альтернативне визначення ширини */
+}
 .list-item-heading {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
-
 .list-item-paragraph {
     font-size: 16px;
     line-height: 1.5;
@@ -103,6 +181,7 @@ ul,ol {
 /* Our Team */
 .team-section {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-heading {
@@ -112,10 +191,26 @@ ul,ol {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom: 20px;
+    margin-bottom: 72px;
+}
+.team-list{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .team-item {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);/* Ширина для кожного елемента */
+    border-radius: 0px 0px 4px 4px;/* Заокруглення нижніх кутів */
+    overflow: hidden;}/* Для правильного відображення border-radius з зображенням */
+
+.team-member-info {
+    padding: 32px 0;
+    /* Відступи зверху і знизу */
+    text-align: center;
+    /* Центрування тексту */
 }
 .list-item-heading {
     font-weight: 500;
@@ -123,6 +218,7 @@ ul,ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .list-item-paragraph {
@@ -130,14 +226,21 @@ ul,ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
 /* Our portfolio */
 .portfolio-section {
-    background-color: #FFFFFF
-
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #FFFFFF;
 }
 
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .portfolio-heading {
     font-size: 36px;
     line-height: 1.11;
@@ -145,14 +248,36 @@ ul,ol {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;/* Для переносу елементів */
+    column-gap: 24px;/* Горизонтальні відступи */
+    row-gap: 48px;/* Вертикальні відступи */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+.portfolio-item {
+    width: calc((100% - 48px) / 3);/* Ширина елемента */
+    background-color: #FFFFFF;
+}
+.portfolio-content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;/* Вимикаємо обводку зверху */
+    border-radius: 0 0 4px 4px;/* Заокруглення нижніх кутів */
+}
 .list-item-heading {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;/* Відступ між заголовком і категорією */
+    text-align: center;
 }
 
 .list-item-paragraph {
@@ -160,11 +285,13 @@ ul,ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
 /* Footer section */
 .footer-class {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .logo-class {
@@ -176,6 +303,8 @@ ul,ol {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-class .logo-span {
@@ -188,4 +317,5 @@ ul,ol {
     letter-spacing: 0.02em;
     font-size: 14px;
     margin-top: 10px;
+    max-width: 264px;
 }
