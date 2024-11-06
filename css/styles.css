@@ -21,7 +21,7 @@ img {
     display: flex;
     align-items: center;
 } 
-nav {
+.main-nav {
     display: flex;
     align-items: center;
     
@@ -151,17 +151,15 @@ nav {
 }
 .features-list {
     display: flex;
-    gap: 24px;
-    /* Відступ між елементами списку */
+    gap: 24px;/* Відступ між елементами списку */
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
 }
 .feature-item {
-    width: calc((100% - 72px) / 4);
-    /* Ширина пункту списку */
-    flex-basis: calc((100% - 3 * 24px) / 4);
-    /* Альтернативне визначення ширини */
+    width: calc((100% - 72px) / 4);/* Ширина пункту списку */
+    flex-basis: calc((100% - 3 * 24px) / 4);/* Альтернативне визначення ширини */
 }
 .list-item-heading {
     font-weight: 500;
