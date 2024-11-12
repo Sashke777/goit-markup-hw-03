@@ -6,6 +6,8 @@ body {
 }
 ul,ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 img {
     display: block;
@@ -15,9 +17,6 @@ img {
     border-bottom: 1px solid #e7e9fc
 }
 .header-container{
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     align-items: center;
 }
@@ -32,13 +31,14 @@ img {
     align-items: center;
     
 }
-.logo-class {
+.logo-class-header {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-decoration: none;
     color: #4d5ae5;
     margin-right: 76px;
 }
@@ -59,7 +59,8 @@ img {
     color: #2e2f42;
     text-decoration: none;
     padding-top: 24px;
-    padding-bottom: 24px;    
+    padding-bottom: 24px; 
+    display: block;   
 }
 
 .nav-link-class:hover,
@@ -74,6 +75,7 @@ img {
 .contact-info {
     font-style: normal;
     color: #434455;
+    margin-left: auto;
 }
 
 .contact-link-class {
@@ -94,11 +96,6 @@ img {
     background-color: #2e2f42;
     padding: 188px 0;
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;    
-}
 
 .section-heading {
     font-size: 56px;
@@ -107,7 +104,7 @@ img {
     letter-spacing: 0.02em;
     color: #ffffff;
     max-width: 496px;
-    margin: 0 auto 20px;
+    margin: 0 auto 48px;
 }
 
 .button-class {
@@ -140,11 +137,7 @@ img {
    padding: 120px 0;
 }
 
-.container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -160,15 +153,12 @@ img {
 .features-list {
     display: flex;
     gap: 24px;
-    /* Відступ між елементами списку */
     list-style: none;
     padding: 0;
     margin: 0;
 }
 .features-item {
-    width: calc((100% - 72px) / 4);
-    flex-basis: calc((100% - 3 * 24px) / 4);
-    
+    width: calc((100% - 72px) / 4);    
 }
 .list-item-heading {
     font-weight: 500;
@@ -211,7 +201,7 @@ img {
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
-    overflow: hidden;}
+}
 
 .team-member-info {
     padding: 32px 0;
@@ -227,13 +217,6 @@ img {
     margin-bottom: 8px;
 }
 
-.list-item-paragraph {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    text-align: center;
-}
 
 /* Our portfolio */
 .portfolio-section {
@@ -242,11 +225,7 @@ img {
     background-color: #FFFFFF;
 }
 
-.container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 .portfolio-heading {
     font-size: 36px;
     line-height: 1.11;
@@ -274,25 +253,9 @@ img {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    border-radius: 0 0 4px 4px;
-}
-.list-item-heading {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;/* Відступ між заголовком і категорією */
-    text-align: center;
 }
 
-.list-item-paragraph {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    text-align: center;
-}
+
 
 /* Footer section */
 .footer-class {
@@ -300,7 +263,7 @@ img {
     padding: 100px 0;
 }
 
-.logo-class {
+.logo-class-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -321,7 +284,6 @@ img {
     line-height: 1.5;
     color: var(--footer-text-color, #F4F4FD);
     letter-spacing: 0.02em;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 16px;
     max-width: 264px
 }
